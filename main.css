@@ -1,0 +1,163 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (min-width : 490px){
+    .navbar .container {
+        margin: 0 15%;
+    }
+}
+.navbar {
+    padding: .6rem;
+    background-color: rgb(192, 206, 218);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    text-transform: capitalize;
+    
+}
+.logo h3{
+    padding: 0;
+    margin: 0;
+   
+    font-size: 2rem;
+}
+.logo-2{
+    margin-left: .6rem !important;
+    color: rgb(255, 145, 0);
+}
+@media only screen and (max-width : 300px){
+    .logo h3{
+        font-size: 1.6rem;
+    }
+
+}
+.fa-bars,.fa-shopping-cart{
+    font-size: 1.4rem;
+}
+.cart sup{
+    background-color: rgb(243, 162, 12);
+    border-radius: 100%;
+    padding: 0 .2rem;
+
+}
+.cart {
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width : 490px){
+    .fa-bars,.fa-shopping-cart{
+        font-size: 1rem;
+    }
+}
+/* header */
+.header{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(./images/hero-bcg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopnow{
+    padding: 2rem 2.5rem;
+    margin: 0 .3rem;
+    background-color: rgba(255, 255, 255,.8);
+    text-align: center;
+     
+}
+.shopnow h1{
+    margin: 0;
+    margin-bottom: 1rem ;
+    text-transform: uppercase;
+}
+.button-shopnow{
+    font-size: 1.3rem;
+    background-color: rgb(255, 166, 0);
+    border: none;
+    padding: .4rem 0.6rem;
+    text-transform: capitalize;
+    outline: none;
+}
+.button-shopnow a{
+    color: black;
+    text-decoration: none;
+}
+@media only screen and (max-width : 390px){
+ .shopnow{
+     padding: 1rem 1.5rem;
+ }
+}
+/* products */
+.products{
+    text-align: center;
+    padding-top: 2rem;
+
+}
+.products h1{
+    text-transform: uppercase;
+    margin: 3rem 0;
+    font-size: 200%;
+
+}
+ .container-products{
+    padding: 0 14%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem ,1fr));
+    justify-content: space-around;
+    grid-gap :1rem;
+}
+.product {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.product img{
+    
+    width: 100%;
+}
+.product button {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    font-size: 1.5rem;
+    background-color: rgb(255, 166, 0);
+    border: none;
+    padding: .3rem .5rem;
+    text-transform: capitalize;
+    
+    /* transform: translateX(100%);
+    visibility: hidden; */
+
+}
+.hidden-button{
+    transition: all .3s;
+    visibility: initial;
+    transform: translateX(0);
+}
+@media only screen and (max-width : 400px){
+    .products h1{
+        font-size: 150%;
+    
+    }
+   }
