@@ -136,6 +136,9 @@ html{
     
     width: 100%;
 }
+.product p{
+    text-transform: capitalize;
+}
 .product button {
     position: absolute;
     top: 30%;
@@ -145,6 +148,7 @@ html{
     border: none;
     padding: .3rem .5rem;
     text-transform: capitalize;
+    outline: none;
     
     /* transform: translateX(100%);
     visibility: hidden; */
@@ -159,5 +163,118 @@ html{
     .products h1{
         font-size: 150%;
     
+    }
+   }
+/* footer */
+.footer{
+    background-color: rgb(133, 122, 122);
+    margin-top:  2rem;
+}
+.footer .container{
+    display: flex;
+    justify-content : space-around;
+    padding: 1rem 10rem;
+    position: relative;
+
+}
+/* .footer .container > div{ */
+
+.contact{
+    flex: 1;
+}
+.contact,.get-ratting h3{
+    text-transform: capitalize;
+}
+
+.get-ratting form{
+    display: flex;
+    flex-direction: column;
+    /* width: fit-content; */
+}
+.contact > div{
+    margin-top: 1.3rem;
+
+}
+.get-ratting{
+    width: 50%;
+}
+.get-ratting form  *{
+    margin-top: .5rem;
+    outline: none;
+}
+.get-ratting form textarea{
+    max-height: 100px;
+    min-height: 40px;
+    width: 99% !important;
+
+}
+.get-ratting label{
+    text-transform: capitalize;
+}
+.get-ratting form input[type=email]{
+    font-size: 1rem;
+    padding: .3rem 0;
+    padding-left: .3rem !important;
+    border: none;
+
+}
+.get-ratting form input[type = submit]{
+    width: 7rem;
+    height: 2rem;
+    color: #ffff;
+    background-color: rgb(86, 119, 14);
+    border: 1px solid rgb(85, 71, 71);
+    border-radius: 3px;
+}
+.fas{
+    font-size: 1.3rem;
+    width: 1.4rem;
+}
+.fab{
+    font-size: 1.6rem;
+    margin: .3rem .3rem;
+    color: rgb(35, 61, 83);
+  
+}
+
+@media only screen and (max-width : 1090px){
+    .footer .container{
+        padding: 1rem 5rem;
+    }
+   }
+   @media only screen and (max-width : 850px){
+    .footer .container{
+        padding: 1rem 3rem;
+    }
+   }
+   @media only screen and (max-width : 770px){
+    .footer .container{
+        padding: 0;
+      flex-direction: column;
+    }
+    @media only screen and (max-width : 350px){
+        .contact span{
+            font-size: 10px !important;
+        }
+        .get-ratting label,textarea{
+            font-size: 10px;
+        }
+        .get-ratting form input[type=submit]{
+            font-size: 10px;
+        }
+       }
+    .footer .container  >div {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        
+    
+    }
+    .get-ratting{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .get-ratting form{
+        width: 60%;
     }
    }
