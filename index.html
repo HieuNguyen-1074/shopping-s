@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="mouse" id="mouse"></div>
     <nav class="navbar">
         <div class="container">
             <i class="fas fa-bars"></i>
@@ -22,12 +23,26 @@
                 <h3 class="logo-1">confy</h3>
                 <h3 class="logo-2">house</h3>
             </div>
-            <div class="cart">
+            <div class="cart-icon" id="cart-icon">
                 <i class="fas fa-shopping-cart"></i>
-                <sup>1</sup>
+                <sup></sup>
             </div>
         </div>
     </nav>
+    <section class="cart cart-close" id="cart">
+        <div class="container cart-container-close" id="cart-container">
+            <div class="cart-close-icon">
+                <i class="fas fa-times" id="close-cart"></i>
+            </div>
+           
+          <div class="cart-products" id="cart-products">
+
+          </div>
+          <div class="total-monney" id="total-money"></div>
+          <button class="btn-clear-all-cart" id="btn-clear-all-cart">clear all</button>
+        </div>
+        
+    </section>
     <header class="header">
         <div class="container">
             <div class="shopnow">
@@ -39,45 +54,47 @@
     <section class="products">
         <h1 class="title-product">our products</h1>
         <div class="container-products" id="container-products">
+
         </div>
     </section>
-    <script src="./index.js"></script>
+
     <footer class="footer">
         <div class="container">
-            
+
             <div class="contact">
                 <h3>address</h3>
                 <div class="contact-phone">
                     <i class="fas fa-phone"></i>
                     <span>09876435796</span>
                 </div>
-                    <div class="contact-address-1">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>bdhsdjshdsdsbhjbscjhdbchsdj</span>
-                    </div>
-                    <div class="contact-address-2">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>sdfghjkl;llkjhgfdghjhgfdgh</span>
-                    </div>
-                    <div class="contact-link">
-                        <a href=""><i class="fab fa-facebook-square"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-github"></i></a>
-                    </div>
+                <div class="contact-address-1">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>bdhsdjshdsdsbhjbscjhdbchsdj</span>
                 </div>
-                
-        <div class="get-ratting">
-            <h3>your ratting</h3>
-            <form action="#">
-                <label for="email">email</label>
-                <input type="email" name="email">
-                <label for="ratting">your ratting</label>
-                <textarea name="comment" form="usrform">Enter text here...</textarea>
-                <input type="submit" value="submit">
-            </form>
-         </div>  
+                <div class="contact-address-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>sdfghjkl;llkjhgfdghjhgfdgh</span>
+                </div>
+                <div class="contact-link">
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="get-ratting">
+                <h3>your ratting</h3>
+                <form action="#">
+                    <label for="email">email</label>
+                    <input type="email" name="email">
+                    <label for="ratting">your ratting</label>
+                    <textarea name="comment" form="usrform">Enter text here...</textarea>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
